@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>usinf call method amar akabr anthony</h1>
+</body>
+</html>
+<script>
+    let Amar={
+        name:"Amar",
+        hobbies:"Singer",
+        live:"Goa"
+    }
+    let Akbar={
+        name:"Akbar",
+        hobbies:"Chef",
+        live:"Mumbai"
+    }
+    let Anthony={
+        name:"Anthony",
+        hobbies:"Magician",
+        live:"Kashmir"
+    }
+
+    function Exchange(hobbies){
+        console.log(`${this.name} borrowed skill ${hobbies}`)
+    }
+
+    // Exchange();
+
+    Exchange.call(Amar,"Chef")
+    Exchange.call(Akbar,"Singer")
+    Exchange.call(Anthony,"Megician")
+
+  
+
+ 
+</script>
